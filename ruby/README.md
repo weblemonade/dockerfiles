@@ -2,7 +2,8 @@
 
 ## What is it and why does it exists?
 
-This image [weblemonade/ruby-base](https://hub.docker.com/r/weblemonade/ruby-base/) is an extension of the ruby:2.3.1-alpine image that includes some basic packages for debugging and building native gems for your rails projects.  
+This image [weblemonade/ruby](https://hub.docker.com/r/weblemonade/ruby/) extends the [weblmonade/base](https://hub.docker.com/r/weblemonade/base/) image which includes s6-overlay and builds ruby using the same install script as the ruby:2.3.1-alpine image.  It also includes some basic packages for debugging and building native gems for your rails projects.  
+
 This image satisfies three objectives:
 
 1.  Smallest possible base image for ruby/rails projects

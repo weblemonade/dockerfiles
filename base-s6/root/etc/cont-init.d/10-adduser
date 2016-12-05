@@ -1,0 +1,11 @@
+#!/usr/bin/with-contenv bash
+
+# https://github.com/linuxserver/docker-baseimage-alpine/blob/master/root/etc/cont-init.d/10-adduser
+
+PUID=${PUID:-1000}
+PGID=${PGID:-1000}
+
+if [ ! "$(id -u user)" -eq "$PUID" ]; then usermod -o -u "$PUID" user ; fi
+if [ ! "$(id -g user)" -eq "$PGID" ]; then groupmod -o -g "$PGID" user ; fi
+
+echo "user id - $(id -u user):$(id -g user)"

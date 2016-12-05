@@ -1,0 +1,18 @@
+source 'https://rubygems.org'
+
+gem 'rails', '5.0.0.1'
+
+gem 'acts-as-taggable-on'
+gem 'awesome_print'
+gem 'bootstrap-sass'
+gem 'cancancan'
+gem 'devise'
+gem 'font-awesome-rails'
+gem 'middleman'
+gem "paperclip"
+gem 'pg'
+gem 'puma'
+gem 'rails_semantic_logger'
+gem 'simple_form'
+gem 'slim-rails'
+gem 'turbolinks'
